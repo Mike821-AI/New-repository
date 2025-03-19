@@ -32,9 +32,6 @@ def get_selenium_soup(url):
     driver = get_driver()
     driver.get(url)
     
-    # Wait for JavaScript to load content
-    # time.sleep(1)  # Adjust sleep time if necessary for the page to load completely
-    
     # Get page source after JavaScript has rendered
     page_source = driver.page_source
     driver.quit()  # Close the browser session
